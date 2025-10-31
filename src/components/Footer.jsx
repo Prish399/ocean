@@ -14,19 +14,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-green-900 text-gray-400">
+    <footer className="bg-green-900 text-pink-500"> {/* Change text color to pink */}
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
              <a href="#home" className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Oceanica
             </a>
-            <p className="text-gray-400 text-base">
+            <p className="text-pink-500 text-base"> {/* Change text color to pink */}
               Riding the waves of innovation.
             </p>
             <div className="flex space-x-6">
               {socialLinks.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a key={item.name} href={item.href} className="text-pink-500 hover:text-white transition-colors duration-300"> {/* Change text color to pink */}
                   <span className="sr-only">{item.name}</span>
                   {item.icon}
                 </a>
@@ -38,17 +38,17 @@ const Footer = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Product</h3>
                 <ul className="mt-4 space-y-4">
-                    <li><a href="#features" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Security</a></li>
+                    <li><a href="#features" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Features</a></li> {/* Change text color to pink */}
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Pricing</a></li> {/* Change text color to pink */}
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Security</a></li> {/* Change text color to pink */}
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Company</h3>
                 <ul className="mt-4 space-y-4">
-                    <li><a href="#about" className="text-base text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Careers</a></li>
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    <li><a href="#about" className="text-base text-pink-500 hover:text-white transition-colors duration-300">About</a></li> {/* Change text color to pink */}
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Careers</a></li> {/* Change text color to pink */}
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Blog</a></li> {/* Change text color to pink */}
                 </ul>
               </div>
             </div>
@@ -56,16 +56,16 @@ const Footer = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Support</h3>
                 <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Help Center</a></li>
-                    <li><a href="#contact" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
-                    <li><a href="#" className="text-base text-gray-400 hover:text-white transition-colors duration-300">Status</a></li>
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Help Center</a></li> {/* Change text color to pink */}
+                    <li><a href="#contact" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Contact Us</a></li> {/* Change text color to pink */}
+                    <li><a href="#" className="text-base text-pink-500 hover:text-white transition-colors duration-300">Status</a></li> {/* Change text color to pink */}
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">&copy; {new Date().getFullYear()} Oceanica, Inc. All rights reserved.</p>
+          <p className="text-base text-pink-500 xl:text-center">&copy; {new Date().getFullYear()} Oceanica, Inc. All rights reserved.</p> {/* Change text color to pink */}
         </div>
       </div>
     </footer>
