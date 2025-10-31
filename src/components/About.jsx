@@ -16,8 +16,8 @@ const About = () => {
             />
           </div>
           <div>
-            <h2 className="text-base font-semibold text-blue-600 tracking-wider uppercase">Our Story</h2>
-            <p className="mt-2 text-4xl md:text-5xl font-black text-gray-900 tracking-tight text-balance">
+            <h2 className="text-base font-semibold text-pink tracking-wider uppercase">Our Story</h2>
+            <p className="mt-2 text-4xl md:text-5xl font-black text-gray-900 tracking-tight text-balance" style={{ color: 'pink' }}>
               Navigating the Tides of Technology
             </p>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
