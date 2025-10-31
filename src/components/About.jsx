@@ -2,12 +2,12 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 md:py-32 bg-gray-50 overflow-hidden">
+    <section id="about" className="py-20 md:py-32 bg-green-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
-             <div className="absolute -top-8 -left-8 w-48 h-48 bg-cyan-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-200"></div>
+             <div className="absolute -top-8 -left-8 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-200"></div>
             <img 
               src="https://picsum.photos/id/1015/800/1000" 
               alt="Mountain landscape representing our mission" 
