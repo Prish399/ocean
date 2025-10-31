@@ -15,6 +15,7 @@ function App() {
         <Features />
         <About />
         <Testimonials />
+        {/* Removed the text at the end as per user request */}
         <CTA />
       </main>
       <Footer />
