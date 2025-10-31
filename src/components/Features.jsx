@@ -46,7 +46,7 @@ const Features = () => {
         <div className="mt-16 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {featureData.map((feature, index) => (
             <div key={index} className="group bg-gray-50 rounded-3xl shadow-lg p-8 border border-gray-100 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 cursor-pointer">
-              <div className="flex items-center justify-center h-16 w-16 rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center h-16 w-16 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
               <h3 className="mt-8 text-2xl font-bold text-gray-900">{feature.title}</h3>
