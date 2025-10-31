@@ -1,0 +1,42 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Remove .vercel directory if exists
+        run: rm -rf .vercel || true
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        env:
+          VERCEL_ORG_ID: team_lsgVoFh7EXKNEue8or2kAyof
+          VERCEL_PROJECT_ID: prj_2rOdKgArVCXUk2sqe8O1XvCi37bk
+        with:
+          vercel-token: j7blm4aGZAf8zR1zMcJGYSvz
+          vercel-org-id: team_96O29gel90O2knTw1NX6n0UA
+          vercel-project-id: prj_cmiOqLgc8HBOtCEPmHpYQXhlvq27
+          vercel-args: '--prod --force'
