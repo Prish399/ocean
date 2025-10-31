@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="bg-white">
       <Header />
-      <main>
+      <main style={{ color: 'green' }}>
         <Hero />
         <Features />
         <About />
